@@ -3,4 +3,6 @@
 
 This is a project that provides snippets for use in NightwatchJS scripts.
 
+![screencast of snippets in action](http://g.recordit.co/s6B8iX8B7t.gif)
+
 For more information about how to custom your own please go to the official [Atom Documentation](https://github.com/atom/snippets/blob/master/README.md)
