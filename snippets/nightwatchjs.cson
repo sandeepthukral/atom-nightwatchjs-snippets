@@ -96,7 +96,7 @@
     'body'        : 'getValue( ${1:selector}, ${2:optional callback})$3'
     'description' : 'Returns a form element current value'
 
-  'inti()' :
+  'init()' :
     'prefix'      : 'init'
     'body'        : 'init()'
     'description' : 'nightwatchJs browser.init()'
@@ -197,77 +197,77 @@
     'description' : 'Waits a given time for an element to be visible'
 
   #assertions
-  'assertAttributeContains()' :
+  'assert.attributeContains()' :
     'prefix'      : 'assertAttributeContains'
     'body'        : 'assert.attributeContains( ${1:selector}, ${2:attribute}, ${3:expected}, ${4:optional message})$5'
     'description' : 'Checks if the given attribute of an element contains the expected value'
 
-  'assertAttributeEquals' :
+  'assert.attributeEquals' :
     'prefix'      : 'assertAttributeEquals'
     'body'        : 'assert.attributeEquals( ${1:cssSelector}, ${2:attribute}, ${3:expected}, ${4:optional message})$5'
     'description' : 'Checks if the given attribute of an element has the expected value'
 
-  'assertContainsText' :
+  'assert.containsText' :
     'prefix'      : 'assertContainsText'
     'body'        : 'assert.containsText( ${1:cssSelector}, ${2:expected}, ${3:optional message})$4'
     'description' : 'Checks if the given element contains the specified text'
 
-  'assertCssClassPresent' :
+  'assert.cssClassPresent' :
     'prefix'      : 'assertCssClassPresent'
     'body'        : 'assert.cssClassPresent( ${1:cssSelector}, ${2:cssName}, ${3:optional message})$4'
     'description' : 'Checks if the given element has the specified CSS class'
 
-  'assertCssClassNotPresent' :
+  'assert.cssClassNotPresent' :
     'prefix'      : 'assertCssClassNotPresent'
     'body'        : 'assert.cssClassNotPresent( ${1:cssSelector}, ${2:cssName}, ${3:optional message})$4'
     'description' : 'Checks if the given element does not have the specified CSS class'
 
-  'assertCssProperty' :
+  'assert.cssProperty' :
     'prefix'      : 'assertCssProperty'
     'body'        : 'assert.cssProperty( ${1:cssSelector}, ${2:cssProperty}, ${3:expected}, ${4:optional message})$5'
     'description' : 'Checks if the specified css property of a given element has the expected value'
 
-  'assertElementPresent' :
+  'assert.elementPresent' :
     'prefix'      : 'assertElementPresent'
-    'body'        : 'assert.elementPresent( ${1:cssSelector}, ${2:optional message)$3'
+    'body'        : 'assert.elementPresent( ${1:cssSelector}, ${2:optional message})$3'
     'description' : 'Checks if the given element exists in the DOM'
 
-  'assertElementNotPresent' :
+  'assert.elementNotPresent' :
     'prefix'      : 'assertElementNotPresent'
-    'body'        : 'assert.elementNotPresent( ${1:cssSelector}, ${2:optional message)$3'
+    'body'        : 'assert.elementNotPresent( ${1:cssSelector}, ${2:optional message})$3'
     'description' : 'Checks if the given element does not exist in the DOM'
 
-  'assertHidden' :
+  'assert.hidden' :
     'prefix'      : 'assertHidden'
     'body'        : 'assert.hidden( ${1:cssSelector}, ${2:optional message})$3'
     'description' : 'Checks if the given element is not visible on the page'
 
-  'assertTitle' :
+  'assert.title' :
     'prefix'      : 'assertTitle'
     'body'        : 'assert.title( ${1:expected}, ${2:optional message})$3'
     'description' : 'Checks if the page title equals the given value'
 
-  'assertUrlContains' :
+  'assert.urlContains' :
     'prefix'      : 'assertUrlContains'
     'body'        : 'assert.urlContains( ${1:expected}, ${2:optional message})$3'
     'description' : 'Checks if the current URL contains the given value'
 
-  'assertUrlEquals' :
+  'assert.urlEquals' :
     'prefix'      : 'assertUrlEquals'
     'body'        : 'assert.urlEquals( ${1:expected}, ${2:optional message})$3'
     'description' : 'Checks if the current url equals the given value'
 
-  'assertValue' :
+  'assert.value' :
     'prefix'      : 'assertValue'
     'body'        : 'assert.value( ${1:cssSelector}, ${2:expected}, ${3:optional message})$4'
     'description' : 'Checks if the given form element\'s value equals the expected value'
 
-  'assertValueContains' :
+  'assert.valueContains' :
     'prefix'      : 'assertValueContains'
     'body'        : 'assert.valueContains( ${1:cssSelector}, ${2:expected}, ${3:optional message})$4'
     'description' : 'Checks if the given form element\'s value contains the expected value'
 
-  'assertVisible' :
+  'assert.visible' :
     'prefix'      : 'assertVisible'
     'body'        : 'assert.visible( ${1:cssSelector}, ${2:optional message})$3'
     'description' : 'Checks if the given element is visible on the page'
@@ -361,62 +361,62 @@
     'description' : 'desc'
 
   'expect.css.visible' :
-    'prefix'      : 'exceptCssBefore'
-    'body'        : 'except.element(${1:selector}).to.have.css(${2:value}).before|after(${3:timeInMilliSeconds})$4'
+    'prefix'      : 'expectCssBefore'
+    'body'        : 'expect.element(${1:selector}).to.have.css(${2:value}).before|after(${3:timeInMilliSeconds})$4'
     'description' : 'desc'
 
   'expect.css.contains' :
-    'prefix'      : 'exceptCssWhich'
-    'body'        : 'except.element(${1:selector}).to.have.css(${2:value}).which.contains|equals|matches(${3:value})$4'
+    'prefix'      : 'expectCssWhich'
+    'body'        : 'expect.element(${1:selector}).to.have.css(${2:value}).which.contains|equals|matches(${3:value})$4'
     'description' : 'desc'
 
   'expect.attribute.equals' :
-    'prefix'      : 'exceptToHaveAttributeEquals'
-    'body'        : 'except.element(${1:selector}).to.have.attribute(${2:name}).equals(${3:value})$4'
+    'prefix'      : 'expectToHaveAttributeEquals'
+    'body'        : 'expect.element(${1:selector}).to.have.attribute(${2:name}).equals(${3:value})$4'
     'description' : 'desc'
 
   'expect.attribute.contains' :
-    'prefix'      : 'exceptToHaveAttributeContains'
-    'body'        : 'except.element(${1:selector}).to.have.attribute(${2:name}).which.contains|matches(${3:value})$4'
+    'prefix'      : 'expectToHaveAttributeContains'
+    'body'        : 'expect.element(${1:selector}).to.have.attribute(${2:name}).which.contains|matches(${3:value})$4'
     'description' : 'desc'
 
   'expect.enabled' :
-    'prefix'      : 'exceptToBeEnabled'
-    'body'        : 'except.element(${1:selector}).to.be.enabled.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToBeEnabled'
+    'body'        : 'expect.element(${1:selector}).to.be.enabled.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
   'expect.not.enabled' :
-    'prefix'      : 'exceptToNotBeEnabled'
-    'body'        : 'except.element(${1:selector}).to.not.be.enabled.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToNotBeEnabled'
+    'body'        : 'expect.element(${1:selector}).to.not.be.enabled.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
   'expect.present' :
-    'prefix'      : 'exceptToBePresent'
-    'body'        : 'except.element(${1:selector}).to.be.present.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToBePresent'
+    'body'        : 'expect.element(${1:selector}).to.be.present.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
   'expect.not.present' :
-    'prefix'      : 'exceptToNotBePresent'
-    'body'        : 'except.element(${1:selector}).to.not.be.present.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToNotBePresent'
+    'body'        : 'expect.element(${1:selector}).to.not.be.present.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
   'expect.selected' :
-    'prefix'      : 'exceptToBeSelected'
-    'body'        : 'except.element(${1:selector}).to.be.selected.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToBeSelected'
+    'body'        : 'expect.element(${1:selector}).to.be.selected.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
   'expect.not.selected' :
-    'prefix'      : 'exceptToNotBeSelected'
-    'body'        : 'except.element(${1:selector}).to.not.be.selected.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToNotBeSelected'
+    'body'        : 'expect.element(${1:selector}).to.not.be.selected.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
   'expect.visible' :
-    'prefix'      : 'exceptToBeVisible'
-    'body'        : 'except.element(${1:selector}).to.be.visible.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToBeVisible'
+    'body'        : 'expect.element(${1:selector}).to.be.visible.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
   'expect.not.visible' :
-    'prefix'      : 'exceptToNotBeVisible'
-    'body'        : 'except.element(${1:selector}).to.not.be.visible.before|after(${2:timeInMilliSeconds})$3'
+    'prefix'      : 'expectToNotBeVisible'
+    'body'        : 'expect.element(${1:selector}).to.not.be.visible.before|after(${2:timeInMilliSeconds})$3'
     'description' : 'desc'
 
