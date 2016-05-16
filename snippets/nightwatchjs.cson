@@ -1,0 +1,422 @@
+'.source.js':
+
+  # commands
+  'clearValue()':
+    'prefix'      : 'clearValue'
+    'body'        : 'clearValue( ${1:selector}, ${2:optional callback})'
+    'description' : 'Clear a textarea or a text input element\'s value'
+
+  'click()':
+    'prefix'      : 'click'
+    'body'        : 'click( ${1:selector}, ${2:optional callback})'
+    'description' : 'Simulates a click event on the given DOM element'
+
+  'closeWindow()':
+    'prefix'      : 'closeWindow'
+    'body'        : 'closeWindow( ${1:optional callback})'
+    'description' : 'Close the current window'
+
+  'deleteCookie()' :
+    'prefix'      : 'deleteCookie'
+    'body'        : 'deleteCookie( ${1:cookie}, ${2:optional callback})'
+    'description' : 'Delete the cookie with the given name'
+
+  'deleteCookies()' :
+    'prefix'      : 'deleteCookies'
+    'body'        : 'deleteCookies( ${optional callback})'
+    'description' : 'Delete all cookies visibleto the current page'
+
+  'end()':
+    'prefix'      : 'end'
+    'body'        : 'end()'
+    'description' : 'Ends the session'
+
+  'getAttribute()':
+    'prefix'      : 'getAttribute'
+    'body'        : 'getAttribute( ${1:selector}, ${2:attribute}, ${3:optional callback})'
+    'description' : 'Retrieve the value of an attribute for a given DOM element'
+
+  'getCookie()':
+    'prefix'      : 'getCookie'
+    'body'        : 'getCookie( ${1:selector}, ${2:optional callback})'
+    'description' : 'Retrieve a single cookie visible to the current page'
+
+  'getCookies()':
+    'prefix'      : 'getCookies'
+    'body'        : 'getCookies( ${1:callback})'
+    'description' : 'Retrieve all the cookies visible to the current page'
+
+  'getCssProperty()':
+    'prefix'      : 'getCssProperty'
+    'body'        : 'getCssProperty( ${1:selector}, ${2:cssPropery}, ${3:optional callback})'
+    'description' : ''
+
+  'getElementSize()' :
+    'prefix'      : 'getElementSize'
+    'body'        : 'getElementSize( ${1:selector}, ${2:optional callback})'
+    'description' : 'Determine an element\'s size in pixels'
+
+  'getLocation()':
+    'prefix'      : 'getLocation'
+    'body'        : 'getLocation( ${1:selector}, ${2:callback})'
+    'description' : 'Determine an element\'s location on the page'
+
+  'getLocationInView()':
+    'prefix'      : 'getLocationInView'
+    'body'        : 'getLocationInView( ${1:selector}, ${2:callback})'
+    'description' : 'Determine an element\'s location on the screen once it has been scrolled into view'
+
+  'getLog':
+    'prefix'      : 'getLog'
+    'body'        : 'getLog( ${1:typeString}, ${2:optional callback})'
+    'description' : 'Gets a log from selenium'
+
+  'getLogTypes()':
+    'prefix'      : 'getLogTypes'
+    'body'        : 'getLogTypes( ${1:callback})'
+    'description' : 'Gets the available log types'
+
+  'getTagName()':
+    'prefix'      : 'getTagName'
+    'body'        : 'getTagName( ${1:selector}, ${2:optional callback})'
+    'description' : 'Query for an element\'s tag name'
+
+  'getText()' :
+    'prefix'      : 'getText'
+    'body'        : 'getText( ${1:selector}, ${2:optional callback})'
+    'description' : 'Returns the visible text of the element'
+
+  'getTitle()' :
+    'prefix'      : 'getTitle'
+    'body'        : 'getTitle( ${1:optional callback})'
+    'description' : 'Returns the title of the current page'
+
+  'getValue()' :
+    'prefix'      : 'getValue'
+    'body'        : 'getValue( ${1:selector}, ${2:optional callback})'
+    'description' : 'Returns a form element current value'
+
+  'inti()' :
+    'prefix'      : 'init'
+    'body'        : 'init()'
+    'description' : 'nightwatchJs browser.init()'
+
+  'injectScript()' :
+    'prefix'      : 'injectScript'
+    'body'        : 'injectScript( ${1:script url}, ${2:optional id}, ${3:optional callback})'
+    'description' : 'Utility command to load an external script into the page specified by url.'
+
+  'isLogAvailable()' :
+    'prefix'      : 'isLogAvailable'
+    'body'        : 'isLogAvailable( ${1:typeString}, ${2:optional callback})'
+    'description' : 'Utility command to test if the log type is available'
+
+  'isVisible()' :
+    'prefix'      : 'isVisible'
+    'body'        : 'isVisible( ${1:selector}, ${2:optional callback})'
+    'description' : 'Determine if an element is currently displayed'
+
+  'maximizeWindow()' :
+    'prefix'      : 'maximizeWindow'
+    'body'        : 'maximizeWindow( ${1:optional callback})'
+    'description' : 'Maximizes the current window'
+
+  'moveToElement()' :
+    'prefix'      : 'moveToElement'
+    'body'        : 'moveToElement( ${1:selector}, ${2:xoffset}, ${3:yoffset}, ${4:optional callback})'
+    'description' : 'Move the mouse by an offset of the specified element'
+
+  'pause()' :
+    'prefix'      : 'pause'
+    'body'        : 'pause( ${1:timeInMilliSeconds}, ${2:optional callback})'
+    'description' : 'Suspends the test for the given time in milliseconds'
+
+  'perform()' :
+    'prefix'      : 'perform'
+    'body'        : 'perform( ${1:callback})'
+    'description' : 'A simple perform command which allows access to the "api" in a callback. Can be useful if you want to read variables set by other commands.'
+
+  'resizeWindow()' :
+    'prefix'      : 'resizeWindow'
+    'body'        : 'resizeWindow( ${1:width}, ${2:height}, ${3:optional callback})'
+    'description' : 'Resizes the current window'
+
+  'saveScreenshot()' :
+    'prefix'      : 'saveScreenshot'
+    'body'        : 'saveScreenshot( ${1:fileName}, ${2:optional callback})'
+    'description' : 'Take screenshot, save to fileName'
+
+  'setCookie()' :
+    'prefix'      : 'setCookie'
+    'body'        : 'setCookie( ${1:cookie}, ${2:optional callback})'
+    'description' : 'Set a cookie, specified as a cookie JSON object'
+
+  'setValue()' :
+    'prefix'      : 'setValue'
+    'body'        : 'setValue( ${1:selector}, ${2:value}, ${3:optionalcallback})'
+    'description' : 'Sends some text and/or sequence of keystrokes to an element.'
+
+  'setWindowPosition()' :
+    'prefix'      : 'setWindowPosition'
+    'body'        : 'setWindowPosition( ${1:xoffset}, ${2:yoffset}, S{3:optional callback})'
+    'description' : 'Sets the current window position'
+
+  'submitForm()' :
+    'prefix'      : 'submitForm'
+    'body'        : 'submitForm( ${1:selector}, ${2:optional callback})'
+    'description' : 'Submit a FORM element'
+
+  'switchWindow()' :
+    'prefix'      : 'switchWindow'
+    'body'        : 'switchWindow( ${1:handleOrName}, ${2:optional callback})'
+    'description' : 'Change focus to another window'
+
+  'urlHash()' :
+    'prefix'      : 'urlHash'
+    'body'        : 'urlHash( ${1:hashValue})'
+    'description' : 'Adds url hash (fragment) to the launch_url'
+
+  'waitForElementNotPresent()' :
+    'prefix'      : 'waitForElementNotPresent'
+    'body'        : 'waitForElementNotPresent( ${1:selector}, ${2:timeInMilliSeconds}, ${3:optional abortOnFailure}, ${4:optional callback}, ${5:optional message})'
+    'description' : 'Waits a given time for an element to be removed'
+
+  'waitForElementNotVisible()' :
+    'prefix'      : 'waitForElementNotVisible'
+    'body'        : 'waitForElementNotVisible( ${1:selector}, ${2:timeInMilliSeconds}, ${3:optional abortOnFailure}, ${4:optional callback}, ${5:optional message})'
+    'description' : 'Waits a given time for an element to be hidden (but existing)'
+
+  'waitForElementPresent()' :
+    'prefix'      : 'waitForElementPresent'
+    'body'        : 'waitForElementPresent( ${1:selector}, ${2:timeInMilliSeconds}, ${3:optional abortOnFailure}, ${4:optional callback}, ${5:optional message})'
+    'description' : 'Waits a given time for an element to be present'
+
+  'waitForElementVisible()' :
+    'prefix'      : 'waitForElementVisible'
+    'body'        : 'waitForElementVisible( ${1:selector}, ${2:timeInMilliSeconds}, ${3:optional abortOnFailure}, ${4:optional callback}, ${5:optional message})'
+    'description' : 'Waits a given time for an element to be visible'
+
+  #assertions
+  'assert.attributeContains()' :
+    'prefix'      : 'assert.attributeContains'
+    'body'        : 'assert.attributeContains( ${1:selector}, ${2:attribute}, ${3:expected}, ${4:optional message})'
+    'description' : 'Checks if the given attribute of an element contains the expected value'
+
+  'assert.attributeEquals' :
+    'prefix'      : 'assert.attributeEquals'
+    'body'        : 'assert.attributeEquals( ${1:cssSelector}, ${2:attribute}, ${3:expected}, ${4:optional message})'
+    'description' : 'Checks if the given attribute of an element has the expected value'
+
+  'assert.containsText' :
+    'prefix'      : 'assert.containsText'
+    'body'        : 'assert.containsText( ${1:cssSelector}, ${2:expected}, ${3:optional message})'
+    'description' : 'Checks if the given element contains the specified text'
+
+  'assert.cssClassPresent' :
+    'prefix'      : 'assert.cssClassPresent'
+    'body'        : 'assert.cssClassPresent( ${1:cssSelector}, ${2:cssName}, ${3:optional message})'
+    'description' : 'Checks if the given element has the specified CSS class'
+
+  'assert.cssClassNotPresent' :
+    'prefix'      : 'assert.cssClassNotPresent'
+    'body'        : 'assert.cssClassNotPresent( ${1:cssSelector}, ${2:cssName}, ${3:optional message})'
+    'description' : 'Checks if the given element does not have the specified CSS class'
+
+  'assert.cssProperty' :
+    'prefix'      : 'assert.cssProperty'
+    'body'        : 'assert.cssProperty( ${1:cssSelector}, ${2:cssProperty}, ${3:expected}, ${4:optional message})'
+    'description' : 'Checks if the specified css property of a given element has the expected value'
+
+  'assert.elementPresent' :
+    'prefix'      : 'assert.elementPresent'
+    'body'        : 'assert.elementPresent( ${1:cssSelector}, ${2:optional message)'
+    'description' : 'Checks if the given element exists in the DOM'
+
+  'assert.elementNotPresent' :
+    'prefix'      : 'assert.elementNotPresent'
+    'body'        : 'assert.elementNotPresent( ${1:cssSelector}, ${2:optional message)'
+    'description' : 'Checks if the given element does not exist in the DOM'
+
+  'assert.hidden' :
+    'prefix'      : 'assert.hidden'
+    'body'        : 'assert.hidden( ${1:cssSelector}, ${2:optional message)'
+    'description' : 'Checks if the given element is not visible on the page'
+
+  'assert.title' :
+    'prefix'      : 'assert.title'
+    'body'        : 'assert.title( ${1:expected}, ${2:optional message)'
+    'description' : 'Checks if the page title equals the given value'
+
+  'assert.urlContains' :
+    'prefix'      : 'assert.urlContains'
+    'body'        : 'assert.urlContains( ${1:expected}, ${2:optional message})'
+    'description' : 'Checks if the current URL contains the given value'
+
+  'assert.urlEquals' :
+    'prefix'      : 'assert.urlEquals'
+    'body'        : 'assert.urlEquals( ${1:expected}, ${2:optional message})'
+    'description' : 'Checks if the current url equals the given value'
+
+  'assert.value' :
+    'prefix'      : 'assert.value'
+    'body'        : 'assert.value( ${1:cssSelector}, ${2:expected}, ${3:optional message})'
+    'description' : 'Checks if the given form element\'s value equals the expected value'
+
+  'assert.valueContains' :
+    'prefix'      : 'assert.valueContains'
+    'body'        : 'assert.valueContains( ${1:cssSelector}, ${2:expected}, ${3:optional message})'
+    'description' : 'Checks if the given form element\'s value contains the expected value'
+
+  'assert.visible' :
+    'prefix'      : 'assert.visible'
+    'body'        : 'assert.visible( ${1:cssSelector}, ${2:optional message})'
+    'description' : 'Checks if the given element is visible on the page'
+
+
+  #verifications
+  'verify.attributeContains()' :
+    'prefix'      : 'verify.attributeContains'
+    'body'        : 'verify.attributeContains( ${1:selector}, ${2:attribute}, ${3:expected}, ${4:optional message})'
+    'description' : 'Checks if the given attribute of an element contains the expected value'
+
+  'verify.attributeEquals' :
+    'prefix'      : 'verify.attributeEquals'
+    'body'        : 'verify.attributeEquals( ${1:cssSelector}, ${2:attribute}, ${3:expected}, ${4:optional message})'
+    'description' : 'Checks if the given attribute of an element has the expected value'
+
+  'verify.containsText' :
+    'prefix'      : 'verify.containsText'
+    'body'        : 'verify.containsText( ${1:cssSelector}, ${2:expected}, ${3:optional message})'
+    'description' : 'Checks if the given element contains the specified text'
+
+  'verify.cssClassPresent' :
+    'prefix'      : 'verify.cssClassPresent'
+    'body'        : 'verify.cssClassPresent( ${1:cssSelector}, ${2:cssName}, ${3:optional message})'
+    'description' : 'Checks if the given element has the specified CSS class'
+
+  'verify.cssClassNotPresent' :
+    'prefix'      : 'verify.cssClassNotPresent'
+    'body'        : 'verify.cssClassNotPresent( ${1:cssSelector}, ${2:cssName}, ${3:optional message})'
+    'description' : 'Checks if the given element does not have the specified CSS class'
+
+  'verify.cssProperty' :
+    'prefix'      : 'verify.cssProperty'
+    'body'        : 'verify.cssProperty( ${1:cssSelector}, ${2:cssProperty}, ${3:expected}, ${4:optional message})'
+    'description' : 'Checks if the specified css property of a given element has the expected value'
+
+  'verify.elementPresent' :
+    'prefix'      : 'verify.elementPresent'
+    'body'        : 'verify.elementPresent( ${1:cssSelector}, ${2:optional message)'
+    'description' : 'Checks if the given element exists in the DOM'
+
+  'verify.elementNotPresent' :
+    'prefix'      : 'verify.elementNotPresent'
+    'body'        : 'verify.elementNotPresent( ${1:cssSelector}, ${2:optional message)'
+    'description' : 'Checks if the given element does not exist in the DOM'
+
+  'verify.hidden' :
+    'prefix'      : 'verify.hidden'
+    'body'        : 'verify.hidden( ${1:cssSelector}, ${2:optional message)'
+    'description' : 'Checks if the given element is not visible on the page'
+
+  'verify.title' :
+    'prefix'      : 'verify.title'
+    'body'        : 'verify.title( ${1:expected}, ${2:optional message)'
+    'description' : 'Checks if the page title equals the given value'
+
+  'verify.urlContains' :
+    'prefix'      : 'verify.urlContains'
+    'body'        : 'verify.urlContains( ${1:expected}, ${2:optional message})'
+    'description' : 'Checks if the current URL contains the given value'
+
+  'verify.urlEquals' :
+    'prefix'      : 'verify.urlEquals'
+    'body'        : 'verify.urlEquals( ${1:expected}, ${2:optional message})'
+    'description' : 'Checks if the current url equals the given value'
+
+  'verify.value' :
+    'prefix'      : 'verify.value'
+    'body'        : 'verify.value( ${1:cssSelector}, ${2:expected}, ${3:optional message})'
+    'description' : 'Checks if the given form element\'s value equals the expected value'
+
+  'verify.valueContains' :
+    'prefix'      : 'verify.valueContains'
+    'body'        : 'verify.valueContains( ${1:cssSelector}, ${2:expected}, ${3:optional message})'
+    'description' : 'Checks if the given form element\'s value contains the expected value'
+
+  'verify.visible' :
+    'prefix'      : 'verify.visible'
+    'body'        : 'verify.visible( ${1:cssSelector}, ${2:optional message})'
+    'description' : 'Checks if the given element is visible on the page'
+
+  #expect
+  'expectText' :
+    'prefix'      : 'expect.text.to'
+    'body'        : 'expect.element(${1:selector}).text.to.contain|equal|match(${2:value}).before|after(${3:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectTextToNot' :
+    'prefix'      : 'expect.text.to.not'
+    'body'        : 'expect.element(${1:selector}).text.to.not.contain|equal|match(${2:value}).before|after(${3:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectCssVisible' :
+    'prefix'      : 'except.css.before'
+    'body'        : 'except.element(${1:selector}).to.have.css(${2:value}).before|after(${3:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectCssContains' :
+    'prefix'      : 'except.css.which'
+    'body'        : 'except.element(${1:selector}).to.have.css(${2:value}).which.contains|equals|matches(${3:value})'
+    'description' : 'desc'
+
+  'expectAttribute' :
+    'prefix'      : 'except.to.have.attribute.equals'
+    'body'        : 'except.element(${1:selector}).to.have.attribute(${2:name}).equals(${3:value})'
+    'description' : 'desc'
+
+  'expectAttribute' :
+    'prefix'      : 'except.to.have.attribute.contains'
+    'body'        : 'except.element(${1:selector}).to.have.attribute(${2:name}).which.contains|matches(${3:value})'
+    'description' : 'desc'
+
+  'expectEnabled' :
+    'prefix'      : 'except.to.be.enabled'
+    'body'        : 'except.element(${1:selector}).to.be.enabled.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectNotEnabled' :
+    'prefix'      : 'except.to.not.be.enabled'
+    'body'        : 'except.element(${1:selector}).to.not.be.enabled.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectPresent' :
+    'prefix'      : 'except.to.be.present'
+    'body'        : 'except.element(${1:selector}).to.be.present.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectNotPresent' :
+    'prefix'      : 'except.to.not.be.present'
+    'body'        : 'except.element(${1:selector}).to.not.be.present.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectSelected' :
+    'prefix'      : 'except.to.be.selected'
+    'body'        : 'except.element(${1:selector}).to.be.selected.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectNotSelected' :
+    'prefix'      : 'except.to.not.be.selected'
+    'body'        : 'except.element(${1:selector}).to.not.be.selected.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectVisible' :
+    'prefix'      : 'except.to.be.visible'
+    'body'        : 'except.element(${1:selector}).to.be.visible.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+
+  'expectNotVisible' :
+    'prefix'      : 'except.to.not.be.visible'
+    'body'        : 'except.element(${1:selector}).to.not.be.visible.before|after(${2:timeInMilliSeconds})'
+    'description' : 'desc'
+

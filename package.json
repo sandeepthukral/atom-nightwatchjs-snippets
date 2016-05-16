@@ -1,0 +1,17 @@
+{
+  "name": "nightwatchjs-snippets",
+  "version": "0.0.0",
+  "description": "NightwatchJs snippets for Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandeepthukral/atom-nightwatchjs-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandeepthukral/atom-nightwatchjs-snippets/issues"
+  },
+  "license": "MIT"
+}
